@@ -9,9 +9,9 @@
         <link rel="stylesheet" href="{% static 'global/styles.css' %}">
     </head>
     <body class='body' style='background-color:#f6f6f6'>
-        <header class='header' id='header'>
-            <img src='{% static "global/logo-white.png" %}' id="logo">
-            <h1>Toolbox</h1>
+        <header id='header'>
+            <img src='{% static "global/logo-white.png" %}' id="logo"/>
+            <h1 id="title-text">Toolbox</h1>
         </header>
         <div>
             {% block content %}

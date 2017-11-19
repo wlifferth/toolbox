@@ -15,7 +15,7 @@ class Tool:
 
 # Create your views here.
 def index(request):
-    tool = Tool(name="Guided Breathing", slug="guided_breathing", description="An exercise that will help you slow down your breathing, lower your heart rate, and relax.")
+    tool = Tool(name="Guided Breathing", slug="guided_breathing", description="An exercise that will help you slow down your breathing, lower your heart rate, and relax.", category="physical")
     tools = [tool, tool, tool]
     context = {}
     context['tools'] = tools
