@@ -1,4 +1,5 @@
 from django.db import models
+from django.contrib.auth.models import User
 
 class Tool(models.Model):
     def __str__(self):
@@ -14,14 +15,14 @@ class Tool(models.Model):
 class Client(models.Model):
     def __str__(self):
         return self.name
-    clientID = models.AutoField(primary_key=True)
+    user = models.OneToOneField(User, on_delete=models.CASCADE)
     MHPID = models.ForeignKey('MHP', on_delete=models.CASCADE)
     name = models.CharField(max_length=100)
     
 class MHP(models.Model):
     def __str__(self):
         return self.name
-    MPHID = models.AutoField(primary_key=True)
+    user = models.OneToOneField(User, on_delete=models.CASCADE)
     name = models.CharField(max_length=100)
     
 class Assignment(models.Model):

@@ -32,6 +32,7 @@ ALLOWED_HOSTS = []
 
 INSTALLED_APPS = [
     'main',
+    'mhp',
     'tools',
     'guided_breathing',
     'open_journaling',
