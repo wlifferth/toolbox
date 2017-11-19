@@ -17,7 +17,6 @@ from django.conf.urls import url, include
 from django.contrib import admin
 
 urlpatterns = [
-    url(r'^tools/', include('tools.urls')),
-    url(r'^guided-breathing/', include('guided_breathing.urls')),
+    url(r'^tools/', include('tools.urls', namespace='tools')),
     url(r'^admin/', admin.site.urls),
 ]

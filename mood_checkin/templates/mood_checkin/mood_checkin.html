@@ -1,0 +1,28 @@
+{% extends "global/header.html" %}
+{% block content %}
+{% load static %}
+{% load staticfiles %}
+<link rel="stylesheet" href="{% static 'mood_checkin/mood_checkin.css' %}">
+<div id="prompt">
+    <p>On a scale of 1 to 5, with 1 being negative and 5 being positive, what would you say your mood is right now?</p>
+</div>
+
+<form action="{% url 'tools:open_journaling:submit' %}" method="post">
+<div id="formDiv">
+{% csrf_token %}
+<img src="{% static 'global/emotions/sad.png' %}" class="emotion-img"/>
+<div class="btn-group" role="group" aria-label="Basic example">
+  <button type="button" class="btn btn-secondary">1</button>
+  <button type="button" class="btn btn-secondary">2</button>
+  <button type="button" class="btn btn-secondary">3</button>
+  <button type="button" class="btn btn-secondary">4</button>
+  <button type="button" class="btn btn-secondary">5</button>
+</div>
+<img src="{% static 'global/emotions/happy.png' %}" class="emotion-img"/>
+
+<div id="buttons">
+  <input type="submit" value="Complete" class="btn btn-success"/>
+</div>
+</form>
+</div>
+{% endblock %}

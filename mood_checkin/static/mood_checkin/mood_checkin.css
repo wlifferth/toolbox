@@ -1,0 +1,19 @@
+.btn-secondary {
+  font-size: 20px;
+  padding: 30px;
+}
+
+.btn-group {
+  margin: 30px;
+}
+
+.emotion-img {
+  heigth: 20%;
+  max-width: 200px;
+  width: 20%;
+  max-height: 200px;
+}
+
+#buttons .btn {
+  display: inline-block;
+}

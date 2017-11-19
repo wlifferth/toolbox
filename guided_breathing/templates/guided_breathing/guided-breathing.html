@@ -9,7 +9,7 @@
 </div>
 
 <div id="buttons">
-    <button type="button" class="btn btn-success">Complete Exercise</button>
+    <a class="btn btn-success" href="{% url 'tools:index' %}">Complete Exercise</a>
     <button type="button" class="btn" onClick="startBreathCycle();">Repeat</button>
 </div>
 <script src="{% static 'guided_breathing/svg.min.js' %}"></script>

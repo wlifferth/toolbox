@@ -34,6 +34,8 @@ INSTALLED_APPS = [
     'main',
     'tools',
     'guided_breathing',
+    'open_journaling',
+    'mood_checkin',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',

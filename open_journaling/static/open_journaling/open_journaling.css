@@ -1,0 +1,14 @@
+#journal-text {
+  width: 760px;
+  height: 340px;
+  font-family: Lora;
+  border: none;
+  border-radius: 10px;
+  padding: 20px;
+  outline: none;
+  resize: none;
+}
+
+#journal-text:focus, area:focus, input:focus {
+  outline: none;
+}

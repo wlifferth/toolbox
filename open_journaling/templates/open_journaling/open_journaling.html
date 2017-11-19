@@ -1,0 +1,18 @@
+{% extends "global/header.html" %}
+{% block content %}
+{% load static %}
+{% load staticfiles %}
+<link rel="stylesheet" href="{% static 'open_journaling/open_journaling.css' %}">
+<div id="prompt">
+    <p>Write about whatever you like below.<br/>How are you feeling? How was your day? What are you thinking about? What you write is up to you.</p>
+</div>
+<div id="formDiv">
+<form action="{% url 'tools:open_journaling:submit' %}" method="post">
+{% csrf_token %}
+<textarea name="journal-text" id="journal-text"/></textarea>
+<div id="buttons">
+  <input type="submit" value="Complete" class="btn btn-success"/>
+</div>
+</form>
+</div>
+{% endblock %}

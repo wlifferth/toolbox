@@ -20,4 +20,6 @@ from . import views
 urlpatterns = [
     url(r'^$', views.index, name='index'),
     url(r'^guided-breathing/', include('guided_breathing.urls', namespace='guided_breathing')),
+    url(r'^mood-checkin/', include('mood_checkin.urls', namespace='mood_checkin')),
+    url(r'^open-journaling/', include('open_journaling.urls', namespace='open_journaling')),
 ]
