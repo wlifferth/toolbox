@@ -1,0 +1,15 @@
+{% extends "global/header.html" %}
+{% block content %}
+{% load static %}
+<link rel="stylesheet" href="{% static 'tools/tools.css' %}">
+<link href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css" rel="stylesheet">
+
+<div id="prompt">
+    <p>Your toolbox</p>
+</div>
+<div id="tool-list">
+  {% for tool in tools %}
+    {% include "tools/tool-item.html" %}
+  {% endfor %}
+</div>
+{% endblock %}

@@ -1,0 +1,66 @@
+:root {
+  --toolbox-green: #308050;
+  --pacific-blue: #35586C;
+  --carribean: #9090AA;
+  --light-grey: #D0D0D0;
+  --dark-grey: #707070;
+}
+/**************************************
+GLOBAL
+**************************************/
+h1, h2, h3, h4, h5 {
+  font-family: "Lora";
+  font-weight: bold;
+}
+
+
+/**************************************
+HEADER
+**************************************/
+header {
+  padding: 30px;
+  background-color: var(--carribean);
+}
+#logo {
+  height: 60px;
+  width: 60px;
+  display: inline-block;
+  float: left;
+}
+
+.header h1 {
+  color: white;
+  font-size: 50px;
+  position: relative;
+  padding-left: 80px;
+}
+
+/**************************************
+Tools
+**************************************/
+#prompt p {
+  font-family: "Lora";
+  font-style: italic;
+  font-size: 30px;
+  color: var(--dark-grey);
+  text-align: center;
+  padding: 30px;
+  width: 50%;
+  margin: auto;
+}
+
+/**************************************
+Buttons
+**************************************/
+.btn {
+  -webkit-border-radius: 5px;
+  border-radius: 5px;
+  box-shadow: 0px 4px 0px #606060;
+  position: relative;
+  top: 0px;
+  transition: all ease 0.1s;
+}
+.btn:hover {
+  top: 2px;
+  box-shadow: 0px 2px 0px #606060;
+}

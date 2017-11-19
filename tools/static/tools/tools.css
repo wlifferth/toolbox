@@ -1,0 +1,31 @@
+#tool-list {
+  overflow: hidden;
+  width: 760px;
+  margin: 0 auto;
+}
+
+.tool-item {
+  font-family: Roboto;
+  color: black;
+  padding: 20px;
+  float: left;
+  display: inline;
+  text-align: left;
+  width: 40%;
+  margin: 4%;
+  background-color: var(--light-grey);
+  -webkit-border-radius: 5px;
+  border-radius: 5px;
+  position: relative;
+  top: 0px;
+  box-shadow: 0px 4px 0px #606060;
+}
+
+.tool-item:hover {
+  top: 2px;
+  box-shadow: 0px 2px 0px #606060;
+}
+
+.glyphicons {
+  vertical-align: middle;
+}

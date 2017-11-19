@@ -1,0 +1,17 @@
+{% extends "global/header.html" %}
+{% block content %}
+{% load static %}
+<link rel="stylesheet" href="{% static 'guided_breathing/guided_breathing.css' %}">
+<div id="prompt">
+    <p>Breathe deeply. Inhale as the circle expands, and exhale as the circle contracts</p>
+</div>
+<div id="canvas">
+</div>
+
+<div id="buttons">
+    <button type="button" class="btn btn-success">Complete Exercise</button>
+    <button type="button" class="btn" onClick="startBreathCycle();">Repeat</button>
+</div>
+<script src="{% static 'guided_breathing/svg.min.js' %}"></script>
+<script src="{% static 'guided_breathing/guided_breathing.js' %}"></script>
+{% endblock %}
